@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Contacto - ZenithTech</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ZenithTech - Contacto" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/Logo.png" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Oswald:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- Dark theme overrides -->
+    <link href="css/dark-theme.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Spinner Start (hidden by default so page still shows if JS/CDNs fail) -->
+    <div
+      id="spinner"
+      class="bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+      style="display: none"
+    >
+      <div
+        class="spinner-grow text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="visually-hidden">Cargando...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Ensure spinner is hidden even if JS/CDNs fail -->
+    <script>
+      (function () {
+        try {
+          var s = document.getElementById("spinner");
+          if (s) {
+            s.style.display = "none";
+            s.classList.remove("show");
+            s.style.opacity = "0";
+            s.style.visibility = "hidden";
+          }
+        } catch (e) {}
+        try {
+          document.documentElement.style.overflow = "auto";
+          document.body.style.overflow = "auto";
+        } catch (e) {}
+        setTimeout(function () {
+          try {
+            if (s) {
+              s.style.display = "none";
+              s.classList.remove("show");
+            }
+          } catch (e) {}
+        }, 3000);
+      })();
+    </script>
+
+    <!-- Navbar Start -->
+    <nav
+      class="navbar navbar-expand-lg bg-secondary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+        <img src="img/Logo.png" alt="ZenithTech" />
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler me-4"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+          <a href="index.html" class="nav-item nav-link">Inicio</a>
+          <a href="about.html" class="nav-item nav-link">Nosotros</a>
+          <a href="service.html" class="nav-item nav-link">Servicios</a>
+          <a href="contact.html" class="nav-item nav-link active text-white"
+            >Contacto</a
+          >
+        </div>
+        <a
+          href="contact.html"
+          class="btn btn-primary rounded-0 py-2 px-lg-4 d-none d-lg-block"
+          >Cotizar Proyecto<i class="fa fa-arrow-right ms-3"></i
+        ></a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero (page header) -->
+    <div
+      class="container-fluid p-0 mb-5 hero-hero wow fadeIn"
+      data-wow-delay="0.1s"
+      style="
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url(&quot;img/index.jpg&quot;) center center no-repeat;
+        background-size: cover;
+        min-height: 40vh;
+        display: flex;
+        align-items: center;
+      "
+    >
+      <div class="container text-white">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h1 class="display-3 text-primary text-uppercase mb-4">Contacto</h1>
+            <p class="lead mb-4 text-white">
+              ¿Tienes una idea o necesitas soporte? Escríbenos y te
+              responderemos pronto.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Socials Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div
+          class="bg-secondary text-center p-5 wow fadeIn"
+          data-wow-delay="0.1s"
+        >
+          <p class="d-inline-block bg-dark text-primary py-1 px-4">
+            Redes Sociales
+          </p>
+          <h2 class="text-white mb-3">Conéctate con nosotros</h2>
+          <p class="text-white-50 mb-4">
+            Síguenos para novedades, casos de éxito y soporte rápido.
+          </p>
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a
+              class="btn btn-dark d-flex align-items-center p-3"
+              href="https://wa.me/50663153952"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-whatsapp fa-2x me-3 text-primary"></i>
+              <span class="h5 mb-0 text-white">WhatsApp</span>
+            </a>
+            <a
+              class="btn btn-dark d-flex align-items-center p-3"
+              href="https://www.facebook.com/profile.php?id=61588468603462"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-facebook-f fa-2x me-3 text-primary"></i>
+              <span class="h5 mb-0 text-white">Facebook</span>
+            </a>
+            <a
+              class="btn btn-dark d-flex align-items-center p-3"
+              href="https://www.instagram.com/zenithtech_cr/"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-instagram fa-2x me-3 text-primary"></i>
+              <span class="h5 mb-0 text-white">Instagram</span>
+            </a>
+            <!-- LinkedIn removed as requested -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Socials End -->
+
+    <!-- Contact Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+            <div class="bg-secondary p-5">
+              <p class="d-inline-block bg-dark text-primary py-1 px-4">
+                Contacto
+              </p>
+              <h1 class="text-uppercase mb-4 text-primary">
+                ¿Tienes alguna consulta? ¡Contáctanos!
+              </h1>
+              <p class="mb-4">
+                Completa el formulario y nuestro equipo te contactará para
+                cotizar tu proyecto.
+              </p>
+              <form
+                action="https://formsubmit.co/ZenithTech_@outlook.com"
+                method="POST"
+              >
+                <input type="hidden" name="_captcha" value="false" />
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control bg-transparent"
+                        id="name"
+                        name="name"
+                        placeholder="Tu nombre"
+                        required
+                      />
+                      <label for="name">Tu nombre</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="email"
+                        class="form-control bg-transparent"
+                        id="email"
+                        name="email"
+                        placeholder="Tu correo"
+                        required
+                      />
+                      <label for="email">Tu correo</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="tel"
+                        class="form-control bg-transparent"
+                        id="phone"
+                        name="phone"
+                        placeholder="Teléfono/WhatsApp"
+                        required
+                      />
+                      <label for="phone">Teléfono/WhatsApp</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control bg-transparent"
+                        id="subject"
+                        name="subject"
+                        placeholder="Asunto"
+                        required
+                      />
+                      <label for="subject">Asunto</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control bg-transparent"
+                        placeholder="Escribe tu mensaje"
+                        id="message"
+                        name="message"
+                        style="height: 100px"
+                        required
+                      ></textarea>
+                      <label for="message">Mensaje</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary w-100 py-3" type="submit">
+                      Enviar Mensaje
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+            <div class="h-100" style="min-height: 400px">
+              <iframe
+                class="google-map w-100 h-100"
+                src="https://maps.google.com/maps?q=10.0078056,-84.2244167&z=17&output=embed"
+                frameborder="0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+                style="
+                  filter: grayscale(100%) invert(92%) contrast(83%);
+                  border: 0;
+                "
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-secondary text-light footer mt-3 pt-3 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-3">
+        <div class="row g-5">
+          <div class="col-lg-4 col-md-6">
+            <h4 class="text-uppercase mb-4 text-white">Contacto</h4>
+            <div class="d-flex align-items-center mb-2">
+              <div class="btn-square bg-dark flex-shrink-0 me-3">
+                <span class="fa fa-map-marker-alt text-primary"></span>
+              </div>
+              <span>Alajuela, Costa Rica</span>
+            </div>
+            <div class="d-flex align-items-center mb-2">
+              <div class="btn-square bg-dark flex-shrink-0 me-3">
+                <span class="fa fa-phone-alt text-primary"></span>
+              </div>
+              <span>506 6315 3952</span>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="btn-square bg-dark flex-shrink-0 me-3">
+                <span class="fa fa-envelope-open text-primary"></span>
+              </div>
+              <span>ZenithTech_@outlook.com</span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h4 class="text-uppercase mb-4">Enlaces Rápidos</h4>
+            <a class="btn btn-link text-white" href="index.html">Inicio</a>
+            <a class="btn btn-link text-white" href="about.html">Nosotros</a>
+            <a class="btn btn-link text-white" href="service.html">Servicios</a>
+            <a class="btn btn-link text-white" href="contact.html">Contacto</a>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h4 class="text-uppercase mb-4">Redes Sociales</h4>
+            <p>Síguenos en nuestras redes sociales</p>
+            <div class="d-flex flex-column gap-2">
+              <a
+                class="btn btn-dark d-flex align-items-center p-2"
+                href="https://wa.me/50663153952"
+                target="_blank"
+                rel="noopener"
+                aria-label="WhatsApp ZenithTech"
+              >
+                <i
+                  class="fab fa-whatsapp fs-6 me-2 text-primary"
+                  aria-hidden="true"
+                ></i>
+                <span class="small mb-0">WhatsApp</span>
+              </a>
+              <a
+                class="btn btn-dark d-flex align-items-center p-2"
+                href="https://www.facebook.com/profile.php?id=61588468603462"
+                target="_blank"
+                rel="noopener"
+                aria-label="Facebook ZenithTech"
+              >
+                <i
+                  class="fab fa-facebook-f fs-6 me-2 text-primary"
+                  aria-hidden="true"
+                ></i>
+                <span class="small mb-0">Facebook</span>
+              </a>
+              <a
+                class="btn btn-dark d-flex align-items-center p-2"
+                href="https://www.instagram.com/zenithtech_cr/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram ZenithTech"
+              >
+                <i
+                  class="fab fa-instagram fs-6 me-2 text-primary"
+                  aria-hidden="true"
+                ></i>
+                <span class="small mb-0">Instagram</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright text-center py-2 mb-0">
+          &copy; 2026 <span class="brand">ZenithTech</span>. Todos los derechos
+          reservados. | Diseñado por <a class="brand" href="#">ZenithTech</a>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

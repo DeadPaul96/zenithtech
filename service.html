@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Servicios - ZenithTech</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ZenithTech - Servicios tecnológicos" name="description">
+
+    <!-- Favicon -->
+    <link href="img/Logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Oswald:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Dark theme overrides -->
+    <link href="css/dark-theme.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start (hidden by default so page still shows if JS/CDNs fail) -->
+    <div id="spinner" class="bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center" style="display:none;">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="visually-hidden">Cargando...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Ensure spinner is hidden even if JS/CDNs fail -->
+    <script>
+        (function(){
+            try {
+                var s = document.getElementById('spinner');
+                if(s){
+                    s.style.display = 'none';
+                    s.classList.remove('show');
+                    s.style.opacity = '0';
+                    s.style.visibility = 'hidden';
+                }
+            } catch (e) {}
+            try { document.documentElement.style.overflow = 'auto'; document.body.style.overflow = 'auto'; } catch(e){}
+            setTimeout(function(){ try{ if(s){ s.style.display='none'; s.classList.remove('show'); } }catch(e){} }, 3000);
+        })();
+    </script>
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <img src="img/Logo.png" alt="ZenithTech">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Inicio</a>
+                <a href="about.html" class="nav-item nav-link">Nosotros</a>
+                <a href="service.html" class="nav-item nav-link active">Servicios</a>
+                <a href="contact.html" class="nav-item nav-link text-white">Contacto</a>
+            </div>
+            <a href="contact.html" class="btn btn-primary rounded-0 py-2 px-lg-4 d-none d-lg-block">Cotizar Proyecto<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Hero (same style as index/about) -->
+    <div class="container-fluid p-0 mb-5 hero-hero wow fadeIn" data-wow-delay="0.1s" style="background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('img/index.jpg') center center no-repeat; background-size: cover; min-height: 40vh; display:flex; align-items:center;">
+        <div class="container text-white">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-3 text-primary text-uppercase mb-4">Servicios</h1>
+                    <p class="lead mb-4">Soluciones tecnológicas diseñadas para impulsar resultados reales.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block bg-secondary text-primary py-1 px-4">Servicios</p>
+                <h1 class="text-uppercase text-primary">Nuestros Servicios</h1>
+            </div>
+            <div class="row g-4">
+                <!-- Main services (6) -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-4 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width:60px;height:60px;">
+                            <i class="fa fa-code fa-2x text-primary"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-2">Desarrollo de páginas y aplicaciones web</h3>
+                            <p class="mb-1">Páginas y aplicaciones web a la medida, responsivas y optimizadas para conversión.</p>
+                            <p class="mb-1"><strong class="text-primary fs-5">Desde ₡250.000</strong></p>
+                            <small class="text-white-50 d-block">servicio personalisable</small>
+                        </div>
+                        <a class="btn btn-square" href="contact.html"><i class="fa fa-plus text-primary"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-4 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width:60px;height:60px;">
+                            <i class="fa fa-laptop-code fa-2x text-primary"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-2">Desarrollo de software a la medida</h3>
+                            <p class="mb-1">Software empresarial adaptado a tus procesos y necesidades.</p>
+                            <p class="mb-1"><strong class="text-primary fs-5">Desde ₡600.000</strong></p>
+                            <small class="text-white-50 d-block">servicio personalisable</small>
+                        </div>
+                        <a class="btn btn-square" href="contact.html"><i class="fa fa-plus text-primary"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-4 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width:60px;height:60px;">
+                            <i class="fab fa-whatsapp fa-2x text-primary"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-2">Chatbots para WhatsApp Business</h3>
+                            <p class="mb-1">Implementación y entrenamiento de chatbots para atención y ventas en WhatsApp.</p>
+                            <p class="mb-1"><strong class="text-primary fs-5">Desde ₡150.000</strong></p>
+                            <small class="text-white-50 d-block">servicio personalisable</small>
+                        </div>
+                        <a class="btn btn-square" href="contact.html"><i class="fa fa-plus text-primary"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-4 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width:60px;height:60px;">
+                            <i class="fa fa-project-diagram fa-2x text-primary"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-2">Automatización (n8n)</h3>
+                            <p class="mb-1">Diseño e implementación de flujos de trabajo y automatizaciones con n8n y otras herramientas.</p>
+                            <p class="mb-1"><strong class="text-primary fs-5">Desde ₡200.000</strong></p>
+                            <small class="text-white-50 d-block">servicio personalisable</small>
+                        </div>
+                        <a class="btn btn-square" href="contact.html"><i class="fa fa-plus text-primary"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-4 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width:60px;height:60px;">
+                            <i class="fa fa-mobile-alt fa-2x text-primary"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-2">Aplicaciones móviles</h3>
+                            <p class="mb-1">Desarrollo de apps nativas y multiplataforma (iOS/Android).</p>
+                            <p class="mb-1"><strong class="text-primary fs-5">Desde ₡800.000</strong></p>
+                            <small class="text-white-50 d-block">servicio personalisable</small>
+                        </div>
+                        <a class="btn btn-square" href="contact.html"><i class="fa fa-plus text-primary"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-4 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width:60px;height:60px;">
+                            <i class="fa fa-desktop fa-2x text-primary"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-2">Software de escritorio</h3>
+                            <p class="mb-1">Aplicaciones de escritorio para Windows, Mac y Linux adaptadas a procesos empresariales.</p>
+                            <p class="mb-1"><strong class="text-primary fs-5">Desde ₡400.000</strong></p>
+                            <small class="text-white-50 d-block">servicio personalisable</small>
+                        </div>
+                        <a class="btn btn-square" href="contact.html"><i class="fa fa-plus text-primary"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Additional Services Start -->
+    <div class="container-xxl py-5 bg-dark">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block bg-secondary text-primary py-1 px-4">Más Servicios</p>
+                <h1 class="text-uppercase text-primary">Soluciones Completas</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-4 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                            <i class="fa fa-plug fa-lg text-primary"></i>
+                        </div>
+                        <div class="ps-3">
+                            <h3 class="text-uppercase mb-2">Integración &amp; APIs</h3>
+                            <p class="mb-0" style="font-size: 14px;">Diseñamos e implementamos APIs y plataformas de integración seguras y escalables para conectar tus sistemas.</p>
+                            <p class="mb-1 mt-2"><strong class="text-primary fs-5">Desde ₡300.000</strong></p>
+                            <small class="text-white-50 d-block">servicio personalisable</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-4 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                            <i class="fa fa-palette fa-lg text-primary"></i>
+                        </div>
+                        <div class="ps-3">
+                            <h3 class="text-uppercase mb-2">Diseño Gráfico</h3>
+                            <p class="mb-0" style="font-size: 14px;">Diseño publicitario y para redes sociales.</p>
+                            <p class="mb-1 mt-2"><strong class="text-primary fs-5">Desde ₡50.000</strong></p>
+                            <small class="text-white-50 d-block">servicio personalisable</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-4 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                            <i class="fab fa-facebook fa-lg text-primary"></i>
+                        </div>
+                        <div class="ps-3">
+                            <h3 class="text-uppercase mb-2">Redes Sociales</h3>
+                            <p class="mb-0" style="font-size: 14px;">Manejo profesional de redes sociales.</p>
+                            <p class="mb-1 mt-2"><strong class="text-primary fs-5">Desde ₡180.000</strong></p>
+                            <small class="text-white-50 d-block">servicio personalisable</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-4 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                            <i class="fab fa-microsoft fa-lg text-primary"></i>
+                        </div>
+                        <div class="ps-3">
+                            <h3 class="text-uppercase mb-2">Licencias Office</h3>
+                            <p class="mb-0" style="font-size: 14px;">Venta y gestión de licencias Microsoft.</p>
+                            <p class="mb-1 mt-2"><strong class="text-primary fs-5">Desde ₡30.000</strong></p>
+                            <small class="text-white-50 d-block">servicio personalisable</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-4 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                            <i class="fa fa-tools fa-lg text-primary"></i>
+                        </div>
+                        <div class="ps-3">
+                            <h3 class="text-uppercase mb-2">Mantenimiento de software y hardware</h3>
+                            <p class="mb-0" style="font-size: 14px;">Mantenimiento preventivo y correctivo para sistemas y equipos.</p>
+                            <p class="mb-1 mt-2"><strong class="text-primary fs-5">Desde ₡100.000</strong></p>
+                            <small class="text-white-50 d-block">servicio personalisable</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-4 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                            <i class="fa fa-headset fa-lg text-primary"></i>
+                        </div>
+                        <div class="ps-3">
+                            <h3 class="text-uppercase mb-2">Soporte IT</h3>
+                            <p class="mb-0" style="font-size: 14px;">Asistencia técnica especializada 24/7.</p>
+                            <p class="mb-1 mt-2"><strong class="text-primary fs-5">Desde ₡70.000</strong></p>
+                            <small class="text-white-50 d-block">servicio personalisable</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-4 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                            <i class="fa fa-chart-line fa-lg text-primary"></i>
+                        </div>
+                        <div class="ps-3">
+                            <h3 class="text-uppercase mb-2">Consultoría IT</h3>
+                            <p class="mb-0" style="font-size: 14px;">Asesoría técnica y estratégica.</p>
+                            <p class="mb-1 mt-2"><strong class="text-primary fs-5">Desde ₡220.000</strong></p>
+                            <small class="text-white-50 d-block">servicio personalisable</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-4 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                            <i class="fa fa-vial fa-lg text-primary"></i>
+                        </div>
+                        <div class="ps-3">
+                            <h3 class="text-uppercase mb-2">Debugging, Testing &amp; QA</h3>
+                            <p class="mb-0" style="font-size: 14px;">Pruebas, depuración y aseguramiento de calidad para software confiable.</p>
+                            <p class="mb-1 mt-2"><strong class="text-primary fs-5">Desde ₡120.000</strong></p>
+                            <small class="text-white-50 d-block">servicio personalisable</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Additional Services End -->
+
+
+    <!-- Call to Action Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+                <div class="bg-secondary text-center p-5 wow fadeIn" data-wow-delay="0.1s">
+                <h1 class="text-uppercase mb-4 text-primary">¿Listo para Transformar tu Negocio?</h1>
+                <p class="text-white mb-4">Contáctanos hoy y descubre cómo nuestras soluciones tecnológicas pueden llevar tu empresa al siguiente nivel.</p>
+                <a href="contact.html" class="btn btn-primary py-3 px-5">Solicitar Cotización</a>
+            </div>
+        </div>
+    </div>
+    <!-- Call to Action End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-secondary text-light footer mt-3 pt-3 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-3">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-uppercase mb-4 text-white">Contacto</h4>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="fa fa-map-marker-alt text-primary"></span>
+                        </div>
+                        <span>Alajuela, Costa Rica</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="fa fa-phone-alt text-primary"></span>
+                        </div>
+                        <span>506 6315 3952</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="fa fa-envelope-open text-primary"></span>
+                        </div>
+                        <span>ZenithTech_@outlook.com</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-uppercase mb-4">Enlaces Rápidos</h4>
+                    <a class="btn btn-link text-white" href="index.html">Inicio</a>
+                    <a class="btn btn-link text-white" href="about.html">Nosotros</a>
+                    <a class="btn btn-link text-white" href="service.html">Servicios</a>
+                    <a class="btn btn-link text-white" href="contact.html">Contacto</a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-uppercase mb-4">Redes Sociales</h4>
+                    <p>Síguenos en nuestras redes sociales</p>
+                    <div class="d-flex flex-column gap-2">
+                        <a class="btn btn-dark d-flex align-items-center p-2" href="https://wa.me/50663153952" target="_blank" rel="noopener" aria-label="WhatsApp ZenithTech">
+                            <i class="fab fa-whatsapp fs-6 me-2 text-primary" aria-hidden="true"></i>
+                            <span class="small mb-0">WhatsApp</span>
+                        </a>
+                        <a class="btn btn-dark d-flex align-items-center p-2" href="https://www.facebook.com/profile.php?id=61588468603462" target="_blank" rel="noopener" aria-label="Facebook ZenithTech">
+                            <i class="fab fa-facebook-f fs-6 me-2 text-primary" aria-hidden="true"></i>
+                            <span class="small mb-0">Facebook</span>
+                        </a>
+                        <a class="btn btn-dark d-flex align-items-center p-2" href="https://www.instagram.com/zenithtech_cr/" target="_blank" rel="noopener" aria-label="Instagram ZenithTech">
+                            <i class="fab fa-instagram fs-6 me-2 text-primary" aria-hidden="true"></i>
+                            <span class="small mb-0">Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright text-center py-2 mb-0">
+                &copy; 2026 <span class="brand">ZenithTech</span>. Todos los derechos reservados. | Diseñado por <a class="brand" href="#">ZenithTech</a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
