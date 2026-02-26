@@ -1,109 +1,159 @@
 /* Dark theme overrides: fuerza paleta negro/blanco/gris donde sea necesario */
-:root{
-    --primary: #ffffff;
-    /* Tono de negro unificado (ajustable). Se establece en #000000 por petición */
-    --secondary: #000000;
-    --light: #bdbdbd;
-    --dark: #000000;
-    /* Color de acento (rojo de los iconos). Ajustar si quieres otro tono */
-    --icon-red: #EB1616;
+:root {
+  --primary: #ffffff;
+  /* Tono de negro unificado (ajustable). Se establece en #000000 por petición */
+  --secondary: #000000;
+  --light: #bdbdbd;
+  --dark: #000000;
+  /* Color de acento (rojo de los iconos). Ajustar si quieres otro tono */
+  --icon-red: #eb1616;
 }
 
-body{
-    background: var(--secondary) !important;
-    color: var(--primary) !important;
+body {
+  background: var(--secondary) !important;
+  color: var(--primary) !important;
 }
 
-.navbar, .bg-secondary{
+.navbar,
+.bg-secondary {
+  background: var(--dark) !important;
+  border-color: rgba(255, 255, 255, 0.04);
+}
+.navbar .navbar-nav .nav-link {
+  color: var(--light) !important;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: #ffffff !important;
+}
+.navbar .navbar-nav .nav-link.active {
+  color: var(--icon-red) !important;
+}
+@media (max-width: 991.98px) {
+  .navbar-collapse {
     background: var(--dark) !important;
-    border-color: rgba(255,255,255,0.04);
-}
-.navbar .navbar-nav .nav-link{
-    color: var(--light) !important;
-}
-.navbar .navbar-nav .nav-link:hover{
-    color: #ffffff !important;
-}
-.navbar .navbar-nav .nav-link.active{
-    color: var(--icon-red) !important;
+    padding: 0 1rem;
+    z-index: 1000;
+  }
 }
 
-.page-header, .container-fluid.p-0.hero-hero{
-    background-color: var(--dark);
-    color: var(--primary);
+.page-header,
+.container-fluid.p-0.hero-hero {
+  background-color: var(--dark);
+  color: var(--primary);
 }
 
-.btn-primary{
-    background: var(--icon-red) !important;
-    color: #ffffff !important;
-    border-color: var(--icon-red) !important;
+.btn-primary {
+  background: var(--icon-red) !important;
+  color: #ffffff !important;
+  border-color: var(--icon-red) !important;
 }
-.btn-primary:hover{
-    background: darken(var(--icon-red), 8%) !important;
-    color: #ffffff !important;
-}
-
-.service-item, .bg-secondary, .team-item .bg-secondary{
-    background: var(--dark) !important;
-    color: var(--primary) !important;
+.btn-primary:hover {
+  background: darken(var(--icon-red), 8%) !important;
+  color: #ffffff !important;
 }
 
-.footer, .footer .copyright{
-    background: var(--dark) !important;
-    color: var(--light) !important;
+.service-item,
+.bg-secondary,
+.team-item .bg-secondary {
+  background: var(--dark) !important;
+  color: var(--primary) !important;
 }
-.footer .btn.btn-link{
-    color: var(--light) !important;
+
+.footer,
+.footer .copyright {
+  background: var(--dark) !important;
+  color: var(--light) !important;
+}
+.footer .btn.btn-link {
+  color: var(--light) !important;
 }
 
 /* Professional copyright styling: smaller, lighter, and responsive layout */
-.footer .copyright{
-    padding: 1rem 0;
-    border-top: 1px solid rgba(255,255,255,0.04);
-    font-size: 0.95rem;
-    color: rgba(255,255,255,0.65) !important;
+.footer .copyright {
+  padding: 1rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.65) !important;
 }
-.footer .copyright p { margin: 0; }
-.footer .copyright a { color: rgba(255,255,255,0.85) !important; text-decoration: none; }
-.footer .copyright a:hover { text-decoration: underline; }
-.footer .copyright .brand { font-weight: 600; color: var(--icon-red) !important; }
-.footer .copyright .byline { color: rgba(255,255,255,0.7) !important; }
-.footer .copyright .row { align-items: center; }
+.footer .copyright p {
+  margin: 0;
+}
+.footer .copyright a {
+  color: rgba(255, 255, 255, 0.85) !important;
+  text-decoration: none;
+}
+.footer .copyright a:hover {
+  text-decoration: underline;
+}
+.footer .copyright .brand {
+  font-weight: 600;
+  color: var(--icon-red) !important;
+}
+.footer .copyright .byline {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+.footer .copyright .row {
+  align-items: center;
+}
 /* Global brand utility: use the red accent for brand mentions */
-.brand { color: var(--icon-red) !important; font-weight: 600; }
+.brand {
+  color: var(--icon-red) !important;
+  font-weight: 600;
+}
 
 /* Center the copyright content for a professional look */
-.footer .copyright { text-align: center; }
-.footer .copyright .row { justify-content: center; }
+.footer .copyright {
+  text-align: center;
+}
+.footer .copyright .row {
+  justify-content: center;
+}
 
-.testimonial-carousel .owl-dots .owl-dot{
-    background: var(--dark) !important;
+.testimonial-carousel .owl-dots .owl-dot {
+  background: var(--dark) !important;
 }
 
 /* Quitamos el filtro global de imágenes para preservar colores originales */
 
-
-.text-dark{
-    color: var(--primary) !important;
+.text-dark {
+  color: var(--primary) !important;
 }
 
 /* Force .text-primary to use the red accent in the dark theme */
-.text-primary{ color: var(--icon-red) !important; }
-
-.bg-dark{
-    background: var(--dark) !important;
+.text-primary {
+  color: var(--icon-red) !important;
 }
 
-a, .btn-link{ color: var(--primary) !important; }
+.bg-dark {
+  background: var(--dark) !important;
+}
+
+a,
+.btn-link {
+  color: var(--primary) !important;
+}
 
 /* Make navbar-brand logo match navbar height */
-.navbar{
-    --navbar-height: 64px; /* ajustable: cambia este valor si deseas una altura distinta */
-    height: var(--navbar-height) !important;
-    min-height: var(--navbar-height);
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-    align-items: center !important;
+.navbar {
+  --navbar-height: 64px; /* ajustable: cambia este valor si deseas una altura distinta */
+  height: var(--navbar-height) !important;
+  min-height: var(--navbar-height);
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  align-items: center !important;
 }
-.navbar-brand{ display:flex; align-items:center; height:var(--navbar-height); padding:0 !important; }
-.navbar-brand img{ height:100% !important; max-height:100% !important; width:auto; display:block; object-fit:contain; background: var(--dark); padding:4px; }
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  height: var(--navbar-height);
+  padding: 0 !important;
+}
+.navbar-brand img {
+  height: 100% !important;
+  max-height: 100% !important;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  background: var(--dark);
+  padding: 4px;
+}
