@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://zenithtech.netlify.app/sitemap.xml
