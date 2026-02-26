@@ -211,10 +211,11 @@
                 Completa el formulario y nuestro equipo te contactará para
                 cotizar tu proyecto.
               </p>
-              <form action="https://formsubmit.co/ZenithTech_@outlook.com" method="POST">
-                <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_next" value="https://zenithtech.netlify.app/index.html" />
-                <input type="hidden" name="_subject" value="Nuevo contacto desde la página web" />
+              <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+                <input type="hidden" name="access_key" value="e721e097-3c34-4d8c-ae9e-b29e313713ea" />
+                <input type="hidden" name="subject" value="Nuevo prospecto desde sitio web ZenithTech" />
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <input type="hidden" name="redirect" value="https://zenithtech.netlify.app/index.html" />
                 <div class="row g-3">
                   <div class="col-md-6">
                     <div class="form-floating">
